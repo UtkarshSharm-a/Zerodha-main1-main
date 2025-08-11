@@ -1,0 +1,44 @@
+.left-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9rem 5rem;
+
+}
+
+.left-item{
+  width: 50%;
+
+}
+.left-item img{
+  margin-left: 9rem;
+  height: 380px;
+}
+
+.right-item{
+  width: 50%;
+  margin-left: 9rem;
+
+}
+.right-item h2{
+  margin-bottom: 3rem;
+
+}
+
+.right-item p{
+  width: 80%;
+
+}
+
+.left-blue-text
+{
+  
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.left-imgages{
+  display: flex;
+  gap: 2rem;
+}

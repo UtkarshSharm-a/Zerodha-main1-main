@@ -1,0 +1,106 @@
+.Signup-text{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.Signup-inner-main{
+  display: flex;
+  margin-top: 4rem;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+.Signup-inner-left{
+  width: 50%;
+}
+.Signup-inner-left img{
+  width: 80%;
+  height: 80%;
+  margin-left: 10rem;
+  margin-top: 3rem;
+}
+
+.Signup-inner-right{
+  margin-top: 4rem;
+}
+.Signup-inner-right h2{
+  margin-bottom: 2rem;
+}
+.Signup-inner-right p{
+  margin-bottom:3rem;
+  margin-left: .2rem;
+}
+.Signup-inner-right p span{
+  color:#007BFF;
+
+}
+
+.inner-div input{
+  margin-bottom: 2rem;
+  padding: .4rem 5rem;
+  font-size: 1.4rem;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  border: 2px solid #b3b2b2;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 300px;
+  /* background-color: rgb(40, 171, 28); */
+}
+
+.flag-container {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 0 10px;
+  border-right: 2px solid #ccc;
+}
+
+.flag-container img {
+  width: 24px;
+  height: 18px;
+}
+
+.flag-container span {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.phone-input input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.otp-button {
+  padding: 10px 50px;
+  font-size: 16px;
+  font-weight: bold;
+   margin-bottom: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.otp-button:hover {
+  background-color: #0056b3;
+}

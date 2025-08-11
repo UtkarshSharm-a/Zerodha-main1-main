@@ -1,0 +1,14 @@
+.Hero-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 8rem;
+}
+
+.Hero-row h1{
+  font-size:3rem;
+}
+.Hero-row p span{
+  color: #387ED1;
+}

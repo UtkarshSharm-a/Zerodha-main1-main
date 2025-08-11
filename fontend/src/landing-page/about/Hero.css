@@ -1,0 +1,54 @@
+.about-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.row-left{
+  padding: 3rem 7rem;
+
+}
+.row-left h1{
+  margin-left: 8rem;
+  width: 80%;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.row-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 5rem;
+}
+
+.row-right-left{
+  width: 50%;
+  margin-left: 12rem;
+  margin-top: 2.5rem;
+
+
+}
+.row-right-left p{
+  width: 70%;
+  margin-top: 1rem;
+
+
+}
+
+
+.row-right-right{
+  width: 50%;
+
+
+}
+.row-right-right p{
+  width: 70%;
+  margin-top: 3rem;
+
+
+}
+.row-right-right p span{
+color: rgb(27, 133, 213);
+}

@@ -1,0 +1,28 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 15rem;
+}
+
+.collapse ul{
+  gap: 1.8rem;
+  display: flex;
+  align-content: center;
+  text-align: center;
+}
+.collapse ul li {
+  display: flex;
+  align-content: center;
+  text-align: center;
+}
+.collapse ul li .Nav-Link1{
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.collapse ul li .Nav-Link1:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(99, 172, 249);
+}

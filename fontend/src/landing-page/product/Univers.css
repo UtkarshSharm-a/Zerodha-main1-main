@@ -1,0 +1,51 @@
+.row-top-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.zerodha-img{
+ height: 100px;
+ width: 300px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ flex-direction: column;
+ margin-top: 6rem;
+
+}
+.zerodha-img img{
+  height: 3rem;
+  align-items: center;
+  margin-left: 1rem;
+}
+.zerodha-img p{
+text-align: center;
+margin-top: 1rem;
+}
+
+.zerodha-univers-bottom-img-text{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4rem 15rem;
+
+}
+.row-container{
+  margin-bottom: 10cdrem;
+}
+.Univer-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.Univer-button button{
+  padding: .7rem 4rem;
+  background-color: #5099f2;
+  border: none;
+  border-radius: .4rem;
+  color: white;
+  margin-bottom: 8rem;
+}

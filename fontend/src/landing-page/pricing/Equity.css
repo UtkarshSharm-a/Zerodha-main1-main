@@ -1,0 +1,37 @@
+.Equity-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 5rem 5rem;
+}
+.Equity-free-delevery{
+  height: 200px;
+  width: 300px;
+  margin-bottom: 9rem;
+}
+.Equity-free-delevery h3{
+  text-align: center;
+
+}
+.Equity-free-delevery p{
+  text-align: center;
+
+}
+.Equity-row1 h1{
+  text-align: center;
+  margin-bottom: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.Equity-row1-inner{
+  display: flex;
+  padding: 2rem 8rem;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+.Equity-row1-inner h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+
+}

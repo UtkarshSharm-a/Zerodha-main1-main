@@ -1,0 +1,35 @@
+.img-1{
+  width: 100px;
+  height: 100px;
+}
+
+.prising-container{
+  margin-top: 5rem;
+  padding: 1rem 10rem;
+}
+.prising-row{
+  display: flex;
+  
+}
+.prising-left{
+  width: 50%;
+}
+.prising-left h1{
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+}.prising-left p{
+  width:80%;
+}
+
+.prising-left a{
+  text-decoration: none;
+}
+
+.prising-right{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.prising-img1{
+  margin-left:2.5rem;
+}

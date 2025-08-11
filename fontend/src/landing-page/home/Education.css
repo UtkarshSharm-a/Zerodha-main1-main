@@ -1,0 +1,34 @@
+.Edu-container{
+  margin-top: 5rem;
+}
+
+.Edu-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Edu-right h2{
+  margin-bottom: 2rem;
+
+}
+.Edu-left{
+  width: 50%;
+}
+.Edu-left img{
+  margin-left: 8rem;
+}
+.Edu-right {
+  width: 50%;
+}
+.Edu-right p{
+  width: 70%;
+  margin-top: 1rem;
+}
+.Edu-right a{
+  text-decoration: none;
+  margin-top: 1rem;
+ 
+}
+.Edu-right a i{
+  margin-left: .5rem;
+}

@@ -1,0 +1,55 @@
+.Right-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 10rem;
+}
+.Right-left{
+  width: 50%;
+  margin-left: 7rem;
+}
+.Right-left p{
+  width: 60%;
+}
+.Right-left h1{
+  margin-bottom: 3rem;
+}
+.Right-Right{
+  width: 50%;
+}
+
+.Right-Right img{
+  margin-right: 9rem;
+}
+.Right-row2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding:1rem 9rem;
+}
+.Right-Right2 img{
+  margin-left: 5rem;
+}
+.Right-left-img{
+display: flex;
+gap: 2rem;
+margin-top: 2rem;
+}
+.Right-row3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 9rem;
+}
+.Right-row4{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 6rem 9rem;
+}
+.Right-row4 .Right-left{
+  margin-left: 10rem;
+ 
+}

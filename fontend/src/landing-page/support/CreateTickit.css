@@ -1,0 +1,35 @@
+.create-row{
+  padding: 5rem 5rem;
+
+}
+.create-row h1{
+font-size: 1.5rem;  
+color: rgb(123, 118, 118);
+margin-left: 7.8rem;
+
+}
+.create-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+
+
+}
+.create-text{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.create-text h2{
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color:rgb(113, 109, 109) ;
+
+}
+.create-text a{
+  margin-bottom: .7rem;
+  text-decoration: none;
+
+}
