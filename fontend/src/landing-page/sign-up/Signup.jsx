@@ -23,7 +23,7 @@ const Signup = () => {
     if(isLogin){
       const user={email,password};
       try {
-        const res=await axios.post("http://localhost:3002/api/v1/user/login",user,{withCredentials:true})
+        const res=await axios.post("https://stock-buy-sell-backend.onrender.com",user,{withCredentials:true})
           if(res.data.success){
         toast.success(res.data.message)
           window.location.href = "http://localhost:3000";
@@ -39,7 +39,7 @@ const Signup = () => {
       const user={username,email,password}
 
         try {
-      const res= await axios.post("http://localhost:3002/api/v1/user/register",user,{ withCredentials: true })
+      const res= await axios.post("https://stock-buy-sell-backend.onrender.com",user,{ withCredentials: true })
       console.log(res)
       if(res.data.success){
         toast.success(res.data.message)
