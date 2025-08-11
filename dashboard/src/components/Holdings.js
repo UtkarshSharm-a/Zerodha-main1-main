@@ -8,7 +8,7 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("http://https://stock-buy-sell-backend.onrender.com/allHoldings").then((res) => {
+    axios.get("http://stock-buy-sell-backend.onrender.com/allHoldings").then((res) => {
       // console.log(res.data);
       setAllHoldings(res.data);
     });
