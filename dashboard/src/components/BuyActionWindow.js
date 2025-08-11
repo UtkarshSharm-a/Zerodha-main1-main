@@ -20,7 +20,7 @@ const handleBuyClick = async () => {
     mode: "BUY",
   });
   try {
-    await axios.post("http://localhost:3002/newOrder", {
+    await axios.post("https://stock-buy-sell-backend.onrender.com", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
