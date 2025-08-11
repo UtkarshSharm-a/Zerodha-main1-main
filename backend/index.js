@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
   res.send("Server is running!");
 });
 
-const allowedOrigins = ["http://localhost:5173", "http://localhost:3000"];
+const allowedOrigins = ["https://stock-buy-sell-frontends.onrender.com", "https://stock-buy-sell-dashbords.onrender.com"];
 
 app.use(cors({
   origin: function (origin, callback) {
