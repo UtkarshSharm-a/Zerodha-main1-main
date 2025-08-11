@@ -20,13 +20,16 @@ const handleBuyClick = async () => {
     mode: "BUY",
   });
   try {
-    await axios.post("https://stock-buy-sell-backend.onrender.com/newOrder", {
-      name: uid,
-      qty: stockQuantity,
-      price: stockPrice,
-      mode: "BUY",
-    });
-
+  await axios.post(
+  "https://stock-buy-sell-backend.onrender.com/newOrder",
+  {
+    name: uid,
+    qty: stockQuantity,
+    price: stockPrice,
+    mode: "BUY",
+  },
+  { withCredentials: true }
+);
     toast.success("Order placed successfully!");
     GeneralContext.closeBuyWindow();
   } catch (error) {
