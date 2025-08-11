@@ -26,7 +26,7 @@ const Signup = () => {
         const res=await axios.post("https://stock-buy-sell-backend.onrender.com",user,{withCredentials:true})
           if(res.data.success){
         toast.success(res.data.message)
-          window.location.href = "http://localhost:3000";
+          window.location.href = "https://stock-buy-sell-dashbords.onrender.com";
       }
         
       } catch (error) {
