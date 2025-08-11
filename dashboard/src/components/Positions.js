@@ -7,7 +7,7 @@ const Positions = () => {
     const [allPositions, setAllposition] = useState([]);
 
   useEffect(() => {
-    axios.get("https://stock-buy-sell-backend.onrender.com").then((res) => {
+    axios.get("http://https://stock-buy-sell-backend.onrender.com/allPositions").then((res) => {
       // console.log(res.data);
       setAllposition(res.data);
     });
