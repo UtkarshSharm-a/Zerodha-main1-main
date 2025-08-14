@@ -77,8 +77,8 @@ const Signup = () => {
           </div>
 
           <form onSubmit={formHandler} className="Signup-inner-right">
-           <h4 className="text-italic">Since this project uses a free MongoDB Atlas cluster, the first signup or login might take a few extra seconds while the server wakes up. After that, it’s fast and smooth 
-</h4>
+       Since this project uses a free MongoDB Atlas cluster, the first signup or login might take a few extra seconds while the server wakes up. After that, it’s fast and smooth 
+
             <h2>{isLogin? "Login":"Signup"}</h2>
             <div className="container">
               {
