@@ -53,3 +53,145 @@ margin-top: 2rem;
   margin-left: 10rem;
  
 }
+
+/* Responsive Settings */
+
+/* For tablets and medium laptops (below 1024px) */
+@media (max-width: 1024px) {
+  .Right-row, .Right-row2, .Right-row3, .Right-row4 {
+    padding: 4rem 5rem;
+  }
+  .Right-left {
+    margin-left: 3rem;
+  }
+  .Right-left p {
+    width: 80%;
+  }
+  .Right-Right img, 
+  .Right-Right2 img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+}
+
+/* For tablets (below 768px) */
+@media (max-width: 768px) {
+  .Right-row, .Right-row2, .Right-row3, .Right-row4 {
+    flex-direction: column !important;
+    align-items: center;
+    padding: 3rem 2rem;
+  }
+  .Right-left {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .Right-left p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .Right-Right, .Right-Right2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .Right-Right img, 
+  .Right-Right2 img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .Right-left-img {
+    justify-content: center;
+  }
+}
+
+/* For mobile devices (below 480px) */
+@media (max-width: 480px) {
+  .Right-row, .Right-row2, .Right-row3, .Right-row4 {
+    padding: 2rem 1rem;
+  }
+  .Right-left h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .Right-left p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .Right-left-img {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .Right-Right img, 
+  .Right-Right2 img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Responsive Fix for .Right-row4 */
+
+/* For tablets (below 992px) */
+@media (max-width: 992px) {
+  .Right-row4 {
+    flex-direction: column-reverse !important;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 3rem;
+    gap: 2rem;
+  }
+
+  .Right-row4 .Right-left {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .Right-row4 .Right-Right2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .Right-row4 .Right-Right2 img {
+    width: 80%;
+    height: auto;
+    margin: 0;
+  }
+
+  .Right-left-img {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+/* For small mobile devices (below 576px) */
+@media (max-width: 576px) {
+  .Right-row4 {
+    padding: 3rem 2rem;
+  }
+
+  .Right-row4 .Right-left h1 {
+    font-size: 1.8rem;
+  }
+
+  .Right-row4 .Right-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .Right-row4 .Right-Right2 img {
+    width: 100%;
+  }
+
+  .Right-left-img img {
+    width: 120px;
+  }
+}

@@ -1,3 +1,75 @@
 .Acount-container{
   margin-top: 7rem;
 }
+/* Responsive Account Section */
+
+/* For large tablets and smaller laptops (below 1024px) */
+@media (max-width: 1024px) {
+  .Acount-container {
+    margin-top: 5rem;
+    padding: 0 2rem;
+  }
+
+  .Hero-h1 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .row p {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+
+  .Hero-btn {
+    width: 40% !important;
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+/* For tablets and large phones (below 768px) */
+@media (max-width: 768px) {
+  .Acount-container {
+    margin-top: 4rem;
+    padding: 0 1.5rem;
+  }
+
+  .Hero-h1 {
+    font-size: 1.6rem;
+  }
+
+  .row p {
+    font-size: 1rem;
+    max-width: 95%;
+  }
+
+  .Hero-btn {
+    width: 60% !important;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* For small devices and phones (below 480px) */
+@media (max-width: 480px) {
+  .Acount-container {
+    margin-top: 3rem;
+    padding: 0 1rem;
+  }
+
+  .Hero-h1 {
+    font-size: 1.3rem;
+  }
+
+  .row p {
+    font-size: 0.9rem;
+    max-width: 100%;
+    margin: 0.5rem auto;
+  }
+
+  .Hero-btn {
+    width: 80% !important;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+}

@@ -178,3 +178,128 @@
   font-style: italic;
   font-size:10px;
 }
+
+
+/* ===== Responsive Design (Added only) ===== */
+
+/* For large tablets and small laptops */
+@media (max-width: 1200px) {
+  .Signup-inner-left img {
+    margin-left: 5rem;
+    width: 85%;
+    height: auto;
+  }
+
+  .Signup-inner-right {
+    width: 40%;
+  }
+}
+
+/* For tablets */
+@media (max-width: 992px) {
+  .Signup-inner-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .Signup-inner-left {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Signup-inner-left img {
+    margin-left: 0;
+    margin-top: 2rem;
+    width: 70%;
+    height: auto;
+  }
+
+  .Signup-inner-right {
+    width: 70%;
+    margin-top: 2rem;
+  }
+
+  .Signup-text h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .Signup-text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+  .SignupContainer {
+    padding: 1rem;
+  }
+
+  .Signup-inner-main {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .Signup-inner-left {
+    width: 100%;
+  }
+
+  .Signup-inner-left img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .Signup-inner-right {
+    width: 90%;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .Signup-inner-right h2 {
+    font-size: 1.6rem;
+  }
+
+  .Signup-inner-right p {
+    font-size: 13px;
+  }
+
+  .otp-button {
+    width: 100%;
+  }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+  .Signup-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .Signup-text p {
+    font-size: 0.9rem;
+  }
+
+  .Signup-inner-right {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .container input {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .otp-button {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .itail {
+    font-size: 9px;
+    text-align: center;
+  }
+}

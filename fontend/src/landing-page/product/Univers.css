@@ -49,3 +49,86 @@ margin-top: 1rem;
   color: white;
   margin-bottom: 8rem;
 }
+
+
+/* Responsive Adjustments */
+
+/* For large tablets and small laptops (below 1024px) */
+@media (max-width: 1024px) {
+  .zerodha-univers-bottom-img-text {
+    padding: 3rem 6rem;
+    gap: 2rem;
+  }
+
+  .zerodha-img {
+    margin-top: 4rem;
+  }
+
+  .zerodha-img img {
+    height: 2.5rem;
+  }
+
+  .Univer-button button {
+    padding: 0.6rem 3rem;
+  }
+}
+
+/* For tablets (below 768px) */
+@media (max-width: 768px) {
+  .zerodha-univers-bottom-img-text {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    gap: 2rem;
+  }
+
+  .zerodha-img {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .zerodha-img img {
+    margin-left: 0;
+  }
+
+  .zerodha-img p {
+    margin-top: 0.8rem;
+  }
+
+  .Univer-button {
+    margin-top: 3rem;
+  }
+
+  .Univer-button button {
+    width: auto;
+  }
+}
+
+/* For mobile devices (below 480px) */
+@media (max-width: 480px) {
+  .zerodha-univers-bottom-img-text {
+    padding: 2rem 1rem;
+  }
+
+  .zerodha-img {
+    margin-top: 3rem;
+  }
+
+  .zerodha-img img {
+    height: 2rem;
+    width: auto;
+  }
+
+  .zerodha-img p {
+    font-size: 0.9rem;
+  }
+
+  .Univer-button button {
+    width: 80%;
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+    margin-bottom: 5rem;
+  }
+}

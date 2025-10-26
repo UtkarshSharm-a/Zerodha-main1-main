@@ -32,3 +32,66 @@
 .Edu-right a i{
   margin-left: .5rem;
 }
+
+
+/* Responsive Edu Section */
+
+/* Below 1024px - Tablets and small laptops */
+@media (max-width: 1024px) {
+  .Edu-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Edu-left,
+  .Edu-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Edu-left img {
+    margin-left: 0;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .Edu-right p {
+    width: 90%;
+    margin: 1rem auto 0 auto;
+  }
+}
+
+/* Below 768px - Tablets and large phones */
+@media (max-width: 768px) {
+  .Edu-right h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .Edu-right p {
+    font-size: 1rem;
+  }
+
+  .Edu-right a {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Below 480px - Small phones */
+@media (max-width: 480px) {
+  .Edu-right h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .Edu-right p {
+    font-size: 0.9rem;
+    width: 95%;
+  }
+
+  .Edu-right a {
+    font-size: 0.9rem;
+  }
+}

@@ -101,3 +101,252 @@ flex-direction: column;
   /* text-decoration: none;
   color: black; */
 }
+
+
+/* ===== Responsive Design (Added Only) ===== */
+
+/* For large tablets and small laptops */
+@media (max-width: 1200px) {
+  .foot-container {
+    padding: 2rem 6rem;
+  }
+
+  .row-fotter {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  .footer1, .footer2, .footer3, .footer4 {
+    flex: 1 1 45%;
+  }
+}
+
+/* For tablets */
+@media (max-width: 992px) {
+  .foot-container {
+    padding: 2rem 4rem;
+  }
+
+  .row-fotter {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  .footer1, .footer2, .footer3, .footer4 {
+    flex: 1 1 45%;
+    text-align: left;
+  }
+
+  .footer1-bot1 p {
+    width: 100%;
+  }
+
+  .foot-img {
+    height: 1.6rem;
+  }
+
+  .footer-bot1-icon1,
+  .footer-bot1-icon2 {
+    gap: 1rem;
+    font-size: 1.3rem;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+  .foot-container {
+    padding: 2rem;
+  }
+
+  .row-fotter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .footer1, .footer2, .footer3, .footer4 {
+    width: 100%;
+  }
+
+  .footer1-bot1 p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .footer-bot1-icon1,
+  .footer-bot1-icon2 {
+    font-size: 1.3rem;
+    gap: 1.2rem;
+  }
+
+  .footer2 h2,
+  .footer3 h2,
+  .footer4 h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer-bot2 a,
+  .footer-bot3 a,
+  .footer-bot4 a {
+    font-size: 0.9rem;
+  }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+  .foot-container {
+    padding: 1.5rem;
+  }
+
+  .row-fotter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .foot-img {
+    height: 1.2rem;
+  }
+
+  .footer1-bot1 p {
+    font-size: 0.8rem;
+  }
+
+  .footer-bot1-icon1,
+  .footer-bot1-icon2 {
+    font-size: 1.2rem;
+    gap: 1rem;
+  }
+
+  .foot-container p {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+  }
+}
+
+/* For tablets */
+@media (max-width: 992px) {
+  .foot-container {
+    padding: 2rem 4rem;
+  }
+
+  .row-fotter {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  .footer1, .footer2, .footer3, .footer4 {
+    flex: 1 1 45%;
+    text-align: center; /* Center text */
+    align-items: center; /* Center align items */
+    display: flex; /* Make flex container for align-items to work */
+    flex-direction: column; /* Stack children vertically */
+  }
+
+  .footer1-bot1 p {
+    width: 100%;
+  }
+
+  .foot-img {
+    height: 1.6rem;
+  }
+
+  .footer-bot1-icon1,
+  .footer-bot1-icon2 {
+    gap: 1rem;
+    font-size: 1.3rem;
+    justify-content: center; /* center icons horizontally */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+  .foot-container {
+    padding: 2rem;
+  }
+
+  .row-fotter {
+    flex-direction: column;
+    align-items: center; /* center the container contents */
+    gap: 2rem;
+  }
+
+  .footer1, .footer2, .footer3, .footer4 {
+    width: 100%;
+    text-align: center; /* center text */
+    align-items: center; /* center items */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer1-bot1 p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .footer-bot1-icon1,
+  .footer-bot1-icon2 {
+    font-size: 1.3rem;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  .footer2 h2,
+  .footer3 h2,
+  .footer4 h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer-bot2 a,
+  .footer-bot3 a,
+  .footer-bot4 a {
+    font-size: 0.9rem;
+  }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+  .foot-container {
+    padding: 1.5rem;
+  }
+
+  .row-fotter {
+    flex-direction: column;
+    align-items: center; /* center content */
+    gap: 1.5rem;
+  }
+
+  .footer1-bot1 p {
+    font-size: 0.8rem;
+  }
+
+  .footer-bot1-icon1,
+  .footer-bot1-icon2 {
+    font-size: 1.2rem;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .foot-container p {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .foot-container p {
+    font-size: 0.8rem;
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .foot-container p {
+    font-size: 0.75rem;
+    max-width: 95%;
+    margin: 1rem auto;
+  }
+}

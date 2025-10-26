@@ -7,8 +7,55 @@
 }
 
 .Hero-row h1{
-  font-size:3rem;
+  font-size: 3rem;
 }
+
 .Hero-row p span{
   color: #387ED1;
+}
+
+/* Responsive Adjustments */
+
+/* For tablets and medium screens (below 1024px) */
+@media (max-width: 1024px) {
+  .Hero-row h1 {
+    font-size: 2.5rem;
+  }
+  .Hero-row {
+    margin-top: 6rem;
+  }
+}
+
+/* For tablets and large mobiles (below 768px) */
+@media (max-width: 768px) {
+  .Hero-row h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .Hero-row p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+
+  .Hero-row {
+    margin-top: 5rem;
+  }
+}
+
+/* For small mobile devices (below 480px) */
+@media (max-width: 480px) {
+  .Hero-row h1 {
+    font-size: 1.6rem;
+  }
+
+  .Hero-row p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .Hero-row {
+    margin-top: 4rem;
+  }
 }

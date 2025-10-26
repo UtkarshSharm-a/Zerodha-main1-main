@@ -33,3 +33,95 @@ margin-left: 7.8rem;
   text-decoration: none;
 
 }
+
+
+/* Responsive Create Section */
+
+/* For tablets and medium screens (below 1024px) */
+@media (max-width: 1024px) {
+  .create-row {
+    padding: 3rem 3rem;
+  }
+
+  .create-row h1 {
+    margin-left: 3rem;
+    font-size: 1.4rem;
+  }
+
+  .create-inner {
+    padding: 2rem 3rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .create-text h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* For tablets and large mobiles (below 768px) */
+@media (max-width: 768px) {
+  .create-row {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .create-row h1 {
+    margin-left: 0;
+    font-size: 1.3rem;
+  }
+
+  .create-inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 2rem;
+    gap: 2rem;
+  }
+
+  .create-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .create-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .create-text a {
+    font-size: 1rem;
+  }
+}
+
+/* For small mobile devices (below 480px) */
+@media (max-width: 480px) {
+  .create-row {
+    padding: 1.5rem 1rem;
+  }
+
+  .create-row h1 {
+    font-size: 1.1rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .create-inner {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .create-text {
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .create-text h2 {
+    font-size: 1.1rem;
+  }
+
+  .create-text a {
+    font-size: 0.9rem;
+  }
+}

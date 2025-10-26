@@ -1,37 +1,56 @@
-import React from 'react'
-import "./Navbar.css"
-import { Link, NavLink } from 'react-router-dom'
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
-  return (
-      //  <div className='navcontainer'>
-      <nav class="navbar  navbar-expand-lg bg-light ">
-      <div class="container-fluid">
-       <NavLink class="navbar-brand" to="/"><img style={{width:"25%"}}  src="media/images/logo.svg" alt="" /></NavLink>
-    </div>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-             <li class="nav-item">
-          <Link className="Nav-Link1 active"  to="signup">SignUp/Login</Link>
-          </li>
-          <li class="nav-item">
-          <Link className="Nav-Link1 active" to="/about">About</Link>
-          </li>
-            <li class="nav-item">
-          <Link className="Nav-Link1 active" to="/product">Product</Link>
-           </li>
-           <li class="nav-item">
-          <Link className="Nav-Link1 active" to='/pricing'>Pricing</Link>
-           </li>   <li class="nav-item">
-          <Link className="Nav-Link1 active"to='/support' >Support</Link>
-           </li>
-          
-           
-         </ul>
-   
-    </div>
-</nav>
-  )
-}
+  const [isOpen, setIsOpen] = useState(false);
 
-export default Navbar
+  return (
+    <nav className="navbar">
+      <div className="container-fluid">
+        {/* Logo */}
+        <NavLink className="navbar-brand" to="/">
+          <img className="logo" style={{ width: "30%" }} src="media/images/logo.svg" alt="logo" />
+        </NavLink>
+
+        {/* Hamburger / Close Icon */}
+        <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <span>&#10005;</span> : <span>&#9776;</span>} {/* ✖ / ☰ */}
+        </div>
+
+        {/* Navigation Links */}
+        <div className={`nav-links ${isOpen ? "active" : ""}`}>
+          <ul>
+            <li>
+              <Link className="Nav-Link1" to="/signup" onClick={() => setIsOpen(false)}>
+                SignUp/Login
+              </Link>
+            </li>
+            <li>
+              <Link className="Nav-Link1" to="/about" onClick={() => setIsOpen(false)}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link className="Nav-Link1" to="/product" onClick={() => setIsOpen(false)}>
+                Product
+              </Link>
+            </li>
+            <li>
+              <Link className="Nav-Link1" to="/pricing" onClick={() => setIsOpen(false)}>
+                Pricing
+              </Link>
+            </li>
+            <li>
+              <Link className="Nav-Link1" to="/support" onClick={() => setIsOpen(false)}>
+                Support
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

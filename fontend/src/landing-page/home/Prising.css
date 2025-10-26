@@ -33,3 +33,256 @@
 .prising-img1{
   margin-left:2.5rem;
 }
+
+
+/* Responsive Pricing Section */
+
+/* For tablets and medium screens (below 1024px) */
+@media (max-width: 1024px) {
+  .prising-container {
+    padding: 1rem 3rem;
+  }
+
+  .prising-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .prising-left,
+  .prising-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .prising-left p {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .prising-right {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
+
+/* For tablets and large phones (below 768px) */
+@media (max-width: 768px) {
+  .prising-left h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .prising-img1 {
+    margin-left: 1rem;
+    width: 50px;
+    height: 50px;
+  }
+
+  .img-1 {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* For smaller phones (below 480px) */
+@media (max-width: 480px) {
+  .prising-container {
+    padding: 1rem 1rem;
+  }
+
+  .prising-left h1 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .prising-left p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .prising-img1 {
+    margin-left: 0.5rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  .img-1 {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+/* Improved Responsive Pricing Section */
+
+/* Base container */
+.prising-container {
+  margin-top: 5rem;
+  padding: 1rem 5rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Flexbox row with wrapping */
+.prising-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+/* Left and right columns */
+.prising-left,
+.prising-right {
+  flex: 1 1 45%;
+  box-sizing: border-box;
+}
+
+/* Text styling */
+.prising-left h1 {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.prising-left p {
+  width: 90%;
+  font-size: 1rem;
+  color: #444;
+}
+
+.prising-left a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #387ED1;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+/* Right side alignment and spacing */
+.prising-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.prising-img1,
+.img-1 {
+  max-width: 100px;
+  height: auto;
+  margin-left: 1.5rem;
+}
+
+/* Responsive Adjustments */
+
+/* Medium screens up to 1024px */
+@media (max-width: 1024px) {
+  .prising-container {
+    padding: 1rem 2rem;
+  }
+
+  .prising-left,
+  .prising-right {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .prising-left h1 {
+    font-size: 1.8rem;
+  }
+
+  .prising-left p {
+    width: 100%;
+  }
+
+  .prising-right {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
+
+/* Small screens below 768px */
+@media (max-width: 768px) {
+  .prising-container {
+    padding: 1rem 1rem;
+  }
+
+  .prising-left h1 {
+    font-size: 1.5rem;
+  }
+
+  .prising-img1,
+  .img-1 {
+    max-width: 70px;
+    margin-left: 1rem;
+  }
+}
+
+/* Extra small screens below 480px */
+@media (max-width: 480px) {
+  .prising-left h1 {
+    font-size: 1.2rem;
+  }
+
+  .prising-left p {
+    font-size: 0.9rem;
+  }
+
+  .prising-img1,
+  .img-1 {
+    max-width: 50px;
+    margin-left: 0.5rem;
+  }
+}
+
+
+/* In your media queries */
+
+@media (max-width: 1024px) {
+  .prising-left h1 {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .prising-left h1 {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .prising-left h1 {
+    font-size: 1.2rem !important;
+  }
+}
+
+/* Base style */
+.prising-left h1 {
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+  /* other existing styles */
+}
+
+/* Responsive font size overrides */
+
+/* For screens 1024px and below */
+@media (max-width: 1024px) {
+  .prising-left h1 {
+    font-size: 1.8rem !important;
+  }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+  .prising-left h1 {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* For screens 480px and below */
+@media (max-width: 480px) {
+  .prising-left h1 {
+    font-size: 1.2rem !important;
+  }
+}

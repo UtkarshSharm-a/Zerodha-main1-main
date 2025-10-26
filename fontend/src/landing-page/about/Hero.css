@@ -52,3 +52,78 @@
 .row-right-right p span{
 color: rgb(27, 133, 213);
 }
+
+
+/* Responsive About Section */
+
+/* Tablets and small laptops (below 1024px) */
+@media (max-width: 1024px) {
+  .row-left {
+    padding: 2rem 3rem;
+  }
+
+  .row-left h1 {
+    margin-left: 0;
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .row-right {
+    padding: 3rem 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .row-right-left,
+  .row-right-right {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .row-right-left p,
+  .row-right-right p {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+
+/* Tablets and large phones (below 768px) */
+@media (max-width: 768px) {
+  .row-left h1 {
+    font-size: 1.7rem;
+  }
+
+  .row-right-left p,
+  .row-right-right p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small phones (below 480px) */
+@media (max-width: 480px) {
+  .row-left {
+    padding: 1.5rem 1rem;
+  }
+
+  .row-left h1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .row-right {
+    padding: 2rem 1rem;
+  }
+
+  .row-right-left p,
+  .row-right-right p {
+    font-size: 0.9rem;
+    width: 95%;
+  }
+
+  .row-right-right p span {
+    color: rgb(27, 133, 213);
+  }
+}

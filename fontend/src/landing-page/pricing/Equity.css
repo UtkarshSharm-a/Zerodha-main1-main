@@ -35,3 +35,94 @@
   font-size: 1.5rem;
 
 }
+
+
+/* Responsive Equity Section */
+
+/* For large tablets and medium laptops (below 1024px) */
+@media (max-width: 1024px) {
+  .Equity-row {
+    flex-wrap: wrap;
+    padding: 3rem 3rem;
+    gap: 2rem;
+  }
+
+  .Equity-free-delevery {
+    width: 45%;
+    margin-bottom: 5rem;
+  }
+
+  .Equity-row1-inner {
+    flex-wrap: wrap;
+    padding: 2rem 4rem;
+    justify-content: center;
+  }
+
+  .Equity-row1 h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* For tablets and mobiles (below 768px) */
+@media (max-width: 768px) {
+  .Equity-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .Equity-free-delevery {
+    width: 80%;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+
+  .Equity-row1-inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .Equity-row1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .Equity-row1-inner h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+/* For small phones (below 480px) */
+@media (max-width: 480px) {
+  .Equity-row {
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+
+  .Equity-free-delevery {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .Equity-row1 h1 {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+  }
+
+  .Equity-row1-inner {
+    padding: 1rem;
+  }
+
+  .Equity-row1-inner h2 {
+    font-size: 1.1rem;
+  }
+
+  .Equity-free-delevery p,
+  .Equity-free-delevery h3 {
+    text-align: center;
+  }
+}
+

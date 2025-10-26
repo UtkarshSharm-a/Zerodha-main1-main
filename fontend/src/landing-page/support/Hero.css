@@ -65,3 +65,171 @@ font-size: 1.5rem;
     color: white;
  margin-bottom: 1rem;
   }
+
+
+  /* Responsive Support Section */
+
+/* For tablets and medium laptops (below 1024px) */
+@media (max-width: 1024px) {
+  .support-text {
+    padding: 1rem 5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .spport-text-main {
+    padding: 1rem 5rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .support-text-left {
+    width: 100%;
+  }
+
+  .support-text-right {
+    width: 100%;
+  }
+}
+
+/* For tablets and large mobiles (below 768px) */
+@media (max-width: 768px) {
+  .support-text {
+    padding: 1rem 2rem;
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .support-text h2,
+  .support-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .spport-text-main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    gap: 2rem;
+  }
+
+  .support-text-left,
+  .support-text-right {
+    width: 100%;
+    align-items: center;
+  }
+
+  .support-text-left input {
+    width: 100%;
+  }
+
+  .support-text-right a {
+    text-align: center;
+  }
+}
+
+/* For mobile devices (below 480px) */
+@media (max-width: 480px) {
+  .support-row {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .support-text {
+    padding: 1rem;
+  }
+
+  .support-text h2,
+  .support-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .spport-text-main {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .support-text-left,
+  .support-text-right {
+    text-align: center;
+  }
+
+  .support-text-left h2,
+  .support-text-right h2 {
+    font-size: 1.2rem;
+  }
+
+  .support-text-left input {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .support-text-right a {
+    font-size: 0.9rem;
+  }
+
+  .Univer-button button {
+    width: 80%;
+  }
+}
+
+
+/* Fix for right side white area on smaller screens */
+
+/* For tablets (below 992px) */
+@media (max-width: 992px) {
+  .support-text,
+  .spport-text-main {
+    padding: 1rem 3rem;
+    background-color: #387ED1;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* For mobile devices (below 768px) */
+@media (max-width: 768px) {
+  .support-text,
+  .spport-text-main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #387ED1;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .support-text-left,
+  .support-text-right {
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .support-row {
+    background-color: #387ED1;
+    width: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/* For small mobile devices (below 480px) */
+@media (max-width: 480px) {
+  .support-text,
+  .spport-text-main {
+    padding: 1rem;
+    background-color: #387ED1;
+    width: 100%;
+  }
+
+  .support-row {
+    height: auto;
+    background-color: #387ED1;
+    padding-bottom: 2rem;
+  }
+}
