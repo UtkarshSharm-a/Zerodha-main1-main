@@ -9,13 +9,11 @@ const Funds = () => {
         <Link className="btn btn-green">Add funds</Link>
         <Link className="btn btn-blue">Withdraw</Link>
       </div>
-
       <div className="row">
         <div className="col">
           <span>
             <p>Equity</p>
           </span>
-
           <div className="table">
             <div className="data">
               <p>Available margin</p>
@@ -73,7 +71,6 @@ const Funds = () => {
             </div>
           </div>
         </div>
-
         <div className="col">
           <div className="commodity">
             <p>You don't have a commodity account</p>

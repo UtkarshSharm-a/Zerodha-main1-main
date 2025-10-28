@@ -231,3 +231,111 @@
 .sell-header {
   background: #dc3545;
 }
+
+
+/* Responsive Design */
+
+/* For large laptops and small desktops (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .container {
+    width: 50%;
+    left: 25%;
+    height: auto;
+  }
+
+  .inputs {
+    flex-wrap: wrap;
+  }
+
+  .inputs fieldset {
+    max-width: 48%;
+    margin-bottom: 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .buttons span {
+    margin-bottom: 10px;
+  }
+}
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+    left: 10%;
+    height: auto;
+    bottom: 5%;
+  }
+
+  .inputs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .inputs fieldset {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 16px;
+  }
+
+  .buttons span {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+}
+
+/* For mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    left: 2.5%;
+    height: auto;
+    bottom: 2%;
+    border-radius: 8px;
+  }
+
+  .inputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .inputs fieldset {
+    width: 100%;
+  }
+
+  .inputs fieldset input {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .buttons span {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+}

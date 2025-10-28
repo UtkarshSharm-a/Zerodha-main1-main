@@ -1,16 +1,17 @@
 import React, { useState } from "react";
-
 import { Link } from "react-router-dom";
 
 const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState(0);
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // 👈 For mobile menu toggle
 
   const handleMenuClick = (index) => {
     setSelectedMenu(index);
+    setIsOpen(false); // close menu after clicking link (mobile)
   };
 
-  const handleProfileClick = (index) => {
+  const handleProfileClick = () => {
     setIsProfileDropdownOpen(!isProfileDropdownOpen);
   };
 
@@ -19,8 +20,15 @@ const Menu = () => {
 
   return (
     <div className="menu-container">
-      <img src="logo.png" style={{ width: "50px" }} />
-      <div className="menus">
+      <img src="logo.png" style={{ width: "50px" }} alt="logo" />
+
+      {/* ☰ / ✖ Toggle button */}
+      <div className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
+        {isOpen ? <span>&#10005;</span> : <span>&#9776;</span>}
+      </div>
+
+      {/* Menu section */}
+      <div className={`menus ${isOpen ? "active" : ""}`}>
         <ul>
           <li>
             <Link
@@ -69,7 +77,7 @@ const Menu = () => {
           <li>
             <Link
               style={{ textDecoration: "none" }}
-              to="funds"
+              to="/funds"
               onClick={() => handleMenuClick(4)}
             >
               <p className={selectedMenu === 4 ? activeMenuClass : menuClass}>
